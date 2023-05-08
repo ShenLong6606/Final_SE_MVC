@@ -1,0 +1,50 @@
+﻿@model FinalSEMVC.Models.Bill
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Bill</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.AgentID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AgentID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Price)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Price)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Deliver)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Deliver)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Pay)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Pay)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.BillID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
